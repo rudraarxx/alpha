@@ -1,0 +1,32 @@
+<div class="container-fluid text-center bg-warning text-light">
+     <h1 class="fw-light">AMAN CONSTRUCTION</h1>
+</div>
+<div class="container-fluid row mt-3 text-center">
+  
+ <div class="col-6">
+    <button type="button" class="btn btn-primary rounded mx-3 mb-3" (click)= "toggleOn =!toggleOn">Employees-List</button>
+    <app-emp-list *ngFor="let data of empData" [emp]="data"></app-emp-list>
+
+    <!-- <table class="table table-striped">  
+      <thead>  
+          <tr>  
+            <th>Name</th>  
+            <th>Age</th>  
+            <th>Designation</th>  
+            <th>Phone</th>
+          </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor = "let data of empData">  
+          <td>{{data.name}}</td>  
+          <td>{{data.age}}</td>  
+          <td>{{data.designation}}</td>  
+          <td>{{data.phone}}</td>  
+        </tr>  
+      </tbody>  
+    </table>  
+  </div> -->
+  
+</div>
+
+<router-outlet></router-outlet>

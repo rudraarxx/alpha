@@ -1,0 +1,23 @@
+<div class="container bg-warning">
+    <h1 class="text-center">Employees Details</h1>
+  </div>
+  <div class="container-fluid row justify-content-center mx-auto">
+    <div class="col-6 px-5"  *ngFor="let emp of Employees">
+      <div class="card" style="width: 18rem;">
+        <img src="../../assets/img/hero_img.png" class="card-img-top" width="100px" height="250px">
+        <div class="card-body">
+          <h5 class="card-title">Employee ID : {{emp.id}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name: {{emp.fname}}</li>
+          <li class="list-group-item">Last name: {{emp.lname}}</li>
+          <li class="list-group-item">Mobile no.: {{emp.phone}}</li>
+          <li class="list-group-item">email: {{emp.email}}</li>
+        </ul>
+        <!-- <div class="card-body text-center" >
+          <button class="btn btn-primary "  (click)= "toggleOn =!toggleOn">Click me for email-Id</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  
